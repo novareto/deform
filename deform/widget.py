@@ -2206,9 +2206,9 @@ class ResourceRegistry(object):
 
 
 default_resources = {
-    "jquery.form": {None: {"js": "deform:static/scripts/jquery.form-3.09.js"}},
+    "jquery.form": {None: {"js": "deform:static/scripts/jquery.form-4.3.0.min.js"}},
     "jquery.maskedinput": {
-        None: {"js": "deform:static/scripts/jquery.maskedinput-1.3.1.min.js"}
+        None: {"js": "deform:static/scripts/jquery.maskedinput-1.4.1.min.js"}
     },
     "jquery.maskMoney": {
         None: {"js": "deform:static/scripts/jquery.maskMoney-3.1.1.min.js"}
@@ -2216,14 +2216,14 @@ default_resources = {
     "deform": {
         None: {
             "js": (
-                "deform:static/scripts/jquery.form-3.09.js",
+                "deform:static/scripts/jquery.form-4.3.0.min.js",
                 "deform:static/scripts/deform.js",
             )
         }
     },
     "typeahead": {
         None: {
-            "js": "deform:static/scripts/typeahead.min.js",
+            "js": "deform:static/scripts/typeahead.jquery-0.11.1.min.js",
             "css": "deform:static/css/typeahead.css",
         }
     },
