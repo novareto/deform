@@ -22,7 +22,7 @@ def readfile(name):
 
 README = readfile("README.rst")
 CHANGES = readfile("CHANGES.txt")
-VERSION = '3.0.0.dev0'
+VERSION = '3.0.0'
 
 requires = [
     "Chameleon>=2.5.1",  # Markup class
@@ -31,6 +31,7 @@ requires = [
     "peppercorn>=0.3",  # rename operation type
     "translationstring>=1.0",  # add format mapping with %
     "zope.deprecation",
+    "setuptools<81.0.0",
 ]
 
 lint_extras = [
@@ -82,7 +83,6 @@ setup(
     long_description=README + "\n\n" + CHANGES,
     classifiers=[
         "Intended Audience :: Developers",
-        "License :: Repoze Public License",
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.10",
@@ -95,8 +95,8 @@ setup(
     keywords="web forms form generation schema validation pyramid",
     author="Chris McDonough, Agendaless Consulting",
     author_email="pylons-discuss@googlegroups.com",
-    maintainer="Steve Piercy",
-    maintainer_email="web@stevepiercy.com",
+    maintainer="Josip Delić, Stéphane Brunner",
+    maintainer_email="delijati@gmx.net, stephane.brunner@gmail.com",
     url="https://docs.pylonsproject.org/projects/deform/en/latest/",
     project_urls={
         'Documentation': docs_url,
